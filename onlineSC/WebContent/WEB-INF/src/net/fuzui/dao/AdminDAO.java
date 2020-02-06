@@ -17,7 +17,7 @@ public class AdminDAO {
 		ResultSet rs = null;
 		try {
 			conn = DBGet.getConnection();
-			String sql="select * from admin where aname = ? and apassword= ?";
+			String sql="select * from `admin` where aname = ? and apassword= ?";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setString(1,aname);
 			ps.setString(2,up);

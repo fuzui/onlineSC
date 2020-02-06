@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBGet {
-	static String sDBDriver = "com.mysql.jdbc.Driver";
-	static String sConnStr = "jdbc:mysql://localhost:3306/selc?useUnicode=true&characterEncoding=utf-8";
-	static String username = "root";
+	static String sDBDriver = "com.mysql.cj.jdbc.Driver";
+	static String sConnStr = "jdbc:mysql://127.0.0.1:3306/selc?serverTimezone=UTC&allowPublicKeyRetrieval=true&characterEncoding=utf-8&useSSL=false&autoReconnect=true&allowMultiQueries=true";
+	static String username = "student";
 	static String password = "root";
 	
 	//·µ»ØConnection¶ÔÏó
